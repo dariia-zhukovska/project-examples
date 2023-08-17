@@ -1,0 +1,50 @@
+@use "../../assets/styles/typography.scss";
+@use "../../assets/styles/colors.scss";
+
+.container {
+  margin: 0 auto;
+  min-width: 408px;
+  margin-top: 180px;
+}
+
+.heading {
+  @include typography.heading-34-500;
+  color: colors.$color-body-text;
+}
+
+.emailInput {
+  margin-top: 24px;
+}
+
+.passwordInput {
+  margin-top: 24px;
+  position: relative;
+}
+
+.loginOptions {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  margin: 24px 0 0 0;
+}
+
+.button {
+  margin-top: 32px;
+}
+
+.rememberMeCheckbox {
+  display: flex;
+}
+
+.forgotPassword {
+  margin-right: 10px;
+  color: colors.$color-primary;
+  @include typography.text-14-600;
+}
+
+.passwordIcon {
+  position: absolute;
+  top: 38.59px;
+  left: 368px;
+  cursor: pointer;
+}

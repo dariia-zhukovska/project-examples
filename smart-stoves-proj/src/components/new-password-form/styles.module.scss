@@ -1,0 +1,40 @@
+@use "../../assets/styles/typography.scss";
+@use "../../assets/styles/colors.scss";
+
+.container {
+  margin: 0 auto;
+  margin-top: 180px;
+  min-width: 408px;
+}
+
+.heading {
+  margin-bottom: 8px;
+  @include typography.heading-34-500;
+  color: colors.$color-body-text;
+}
+
+.headingPrimaryColor {
+  color: colors.$color-primary;
+}
+
+.passwordInput {
+  position: relative;
+  margin-top: 24px;
+}
+
+.passwordIcon {
+  position: absolute;
+  top: 38.59px;
+  left: 368px;
+  cursor: pointer;
+}
+
+.inputsBlock {
+  margin-bottom: 32px;
+}
+
+.buttonsBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

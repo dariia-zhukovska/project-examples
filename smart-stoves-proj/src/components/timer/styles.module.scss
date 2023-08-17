@@ -1,0 +1,7 @@
+@use "../../assets/styles/typography.scss";
+@use "../../assets/styles/colors.scss";
+
+.timer {
+  @include typography.text-16-400;
+  color: colors.$color-primary;
+}

@@ -1,0 +1,53 @@
+@use "../../../assets/styles/colors.scss";
+
+.Toastify__toast-icon {
+  margin-right: 16px;
+  width: 32px;
+  height: 32px;
+}
+
+.Toastify__close-button {
+  margin-left: 16px;
+  width: 16px;
+  height: 16px;
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--success {
+  background-color: colors.$color-success;
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--error {
+  background-color: colors.$color-error;
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--info {
+  background-color: colors.$color-info;
+}
+
+.Toastify__toast-container--customContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.successToast {
+  position: absolute;
+  width: 408px;
+  height: 70px;
+  left: 29vh;
+  bottom: 1rem;
+}
+
+.errorToast {
+  position: absolute;
+  width: 408px;
+  height: 70px;
+  left: 29vh;
+  bottom: 1rem;
+}

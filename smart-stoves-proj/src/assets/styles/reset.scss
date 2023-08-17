@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  min-height: 100vh;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+img,
+picture,
+svg,
+label,
+input {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px white inset;
+}
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px white inset;
+}

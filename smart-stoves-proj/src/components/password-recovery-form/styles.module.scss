@@ -1,0 +1,84 @@
+@use "../../assets/styles/typography.scss";
+@use "../../assets/styles/colors.scss";
+
+
+@mixin input-message {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 8px;
+  @include typography.text-14-400;
+  padding-left: 28px;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 180px;
+  max-width: 408px;
+}
+
+.heading {
+  margin-bottom: 8px;
+  @include typography.heading-34-500;
+  color: colors.$color-body-text;
+}
+
+.headingPrimaryColor {
+  color: colors.$color-primary;
+}
+
+.description {
+  @include typography.text-16-400;
+  color: colors.$color-body-text;
+}
+
+.emailInput {
+  margin-top: 24px;
+}
+
+.buttonsBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.errorWarning {
+  display: flex;
+  margin-top: 8px;
+  color: colors.$color-error;
+  gap: 8px;
+}
+
+.dividingStrokesContainer {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 24px;
+  min-width: 188px;
+  gap: 8%;
+}
+
+.dividingStroke {
+  height: 1px;
+  width: 100%;
+  background-color: colors.$color-body-text-light-300;
+}
+
+.timerMessage {
+  @include typography.text-16-400;
+  color: colors.$color-body-text;
+}
+
+.inputMessage {
+  @include input-message;
+  color: colors.$color-success;
+  background-image: url('../../assets/svg/success-email-icon.svg');
+
+}
+
+.inputErrorMessage {
+  @include input-message;
+  color: colors.$color-error;
+  background-image: url('../../assets/svg/error-email-icon.svg');
+}

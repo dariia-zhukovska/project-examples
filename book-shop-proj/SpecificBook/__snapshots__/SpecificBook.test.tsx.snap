@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing decrease handler function should not call onCountChange, when count <= 1 1`] = `
+<div>
+  <div
+    style="position: fixed; z-index: 9999; top: 16px; left: 16px; right: 16px; bottom: 16px; pointer-events: none;"
+  />
+  <div
+    class="bookItem"
+  >
+    <div
+      class="bookItemLeft"
+    >
+      <img
+        alt="book_image"
+        class="bookItemImage"
+        src="https://courses.prometheus.org.ua/asset-v1:Ciklum+FEB101+2022_T3+type@asset+block@javascript_the_definitive_guide.jpg"
+      />
+    </div>
+    <div
+      class="bookItemRight"
+    >
+      <div
+        class="bookItemInfo"
+      >
+        <div
+          class="bookItemAuthor"
+        >
+          David Flanagan
+        </div>
+        <div
+          class="bookItemTitle"
+        >
+          JavaScript: The Definitive Guide, 7th Edition
+        </div>
+        <div
+          class="bookItemShortDescription"
+        >
+          JavaScript is the programming language of the web and is used by more software developers today than any other programming language.
+        </div>
+        <div
+          class="bookItemMoreCard"
+        >
+          <div
+            class="bookItemMore"
+          >
+            More about book
+          </div>
+        </div>
+      </div>
+      <div
+        class="bookItemPriceLine"
+      >
+        <div>
+          <div
+            class="bookItemPrice"
+          >
+            10.99 $
+          </div>
+          <div
+            class="bookItemCount"
+          >
+            <div
+              class="counter"
+            >
+              <button
+                data-testid="counter-decrease"
+                style="color: grey;"
+              >
+                -
+              </button>
+              <input
+                data-testid="counter-value"
+                max="42"
+                min="1"
+                type="number"
+                value="1"
+              />
+              <button
+                data-testid="counter-increase"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>
+           
+          <div
+            class="bookItemTotalPrice"
+          >
+             Total Price: 10.99  $
+          </div>
+          <button
+            class="ButtonAddToCart"
+          >
+            Add To Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,31 @@
+@use "../../assets/styles/typography.scss";
+@use "../../assets/styles/colors.scss";
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+
+  img {
+    max-width: 164px;
+    margin-bottom: 64px;
+  }
+
+  h1 {
+    @include typography.heading-34-700;
+    margin-bottom: 16px;
+  }
+
+  p {
+    @include typography.text-14-400;
+    color: colors.$color-body-text;
+  }
+
+  .link {
+    @include typography.text-14-600;
+    color: colors.$color-primary;
+  }
+
+}

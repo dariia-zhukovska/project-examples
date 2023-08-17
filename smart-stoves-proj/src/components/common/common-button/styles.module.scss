@@ -1,0 +1,130 @@
+@use "../../../assets/styles/typography.scss";
+@use "../../../assets/styles/colors.scss";
+
+.button {
+  /* Common styles */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 6px 16px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  white-space: nowrap;
+
+  /* Size variations */
+  &--L {
+    height: 48px;
+    @include typography.button-18-500;
+  }
+
+  &--M {
+    height: 40px;
+    @include typography.button-16-500;
+  }
+
+  &--S {
+    height: 36px;
+    @include typography.button-16-500;
+  }
+
+  &--XS {
+    height: 30px;
+    @include typography.button-14-500;
+  }
+
+  /* Variant variations */
+  &--primary {
+    color: colors.$color-base;
+    background-color: colors.$color-primary;
+
+    &:hover {
+      background: colors.$color-primary-300;
+      box-shadow: 0px 5px 5px -3px rgba(127, 143, 164, 0.2),
+        0px 3px 14px 2px rgba(127, 143, 164, 0.12);
+    }
+  }
+
+  &--outline {
+    color: colors.$color-primary;
+    background-color: transparent;
+    border: 1px solid colors.$color-primary;
+
+    &:hover {
+      color: colors.$color-primary-300;
+      border-color: colors.$color-primary-300;
+      box-shadow: 0px 5px 5px -3px rgba(127, 143, 164, 0.2),
+        0px 3px 14px 2px rgba(127, 143, 164, 0.12);
+    }
+  }
+
+  &--secondary {
+    color: colors.$color-primary;
+    background-color: colors.$color-accent-gray;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid colors.$color-primary;
+    }
+  }
+
+  &--link {
+    color: colors.$color-primary;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      text-decoration-line: underline;
+    }
+  }
+
+  &--contained {
+    color: colors.$color-base;
+    background-color: colors.$color-button-contained;
+    border: none;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: colors.$color-base-dark;
+    }
+  }
+
+  /* State variations */
+  &--primary-disabled {
+    background-color: colors.$color-accent-disabled;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  &--outline-disabled {
+    color: colors.$color-accent-disabled;
+    background-color: none;
+    border: 1px solid colors.$color-accent-disabled;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  &--secondary-disabled {
+    color: colors.$color-base;
+    background-color: colors.$color-accent-disabled;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  &--link-disabled {
+    color: colors.$color-accent-disabled;
+    background-color: none;
+    pointer-events: none;
+  }
+}
+
+.extraIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M10.6695 1.96533H9.33018C9.21113 1.96533 9.15161 2.02486 9.15161 2.1439V9.15283H2.50035C2.3813 9.15283 2.32178 9.21236 2.32178 9.3314V10.6707C2.32178 10.7897 2.3813 10.8493 2.50035 10.8493H9.15161V17.8582C9.15161 17.9772 9.21113 18.0368 9.33018 18.0368H10.6695C10.7885 18.0368 10.848 17.9772 10.848 17.8582V10.8493H17.5003C17.6194 10.8493 17.6789 10.7897 17.6789 10.6707V9.3314C17.6789 9.21236 17.6194 9.15283 17.5003 9.15283H10.848V2.1439C10.848 2.02486 10.7885 1.96533 10.6695 1.96533Z' fill='white'/%3E%3C/svg%3E");
+}
